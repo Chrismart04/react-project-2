@@ -13,8 +13,9 @@ export function ContexMovieCard() {
   return (
     <ul>
       {movies.map((movie) => {
-        <MovieCard />;
+        return <MovieCard movie={movie} />;
       })}
     </ul>
   );
 }
+
