@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { get } from "../data/httpClient";
 import { MovieCard } from "../components/MovieCard";
+import "./ContexmovieCard.css"
 
 export function ContexMovieCard() {
   const [movies, SetMovies] = useState([]);
@@ -10,8 +11,9 @@ export function ContexMovieCard() {
     });
   }, []);
 
+//return movie in ul, the li items is in the movie card component
   return (
-    <ul>
+    <ul className="container">
       {movies.map((movie) => {
         return <MovieCard movie={movie} />;
       })}
