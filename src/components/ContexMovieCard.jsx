@@ -15,7 +15,7 @@ export function ContexMovieCard() {
   return (
     <ul className="container">
       {movies.map((movie) => {
-        return <MovieCard movie={movie} />;
+        return <MovieCard key={movie.id} movie={movie} />;
       })}
     </ul>
   );
