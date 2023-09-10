@@ -17,6 +17,12 @@ export function MovieDetails() {
   return (
     <div>
       <img src={imageUrl} alt={movie.title} />
+      <div>
+        <p>
+          <strong>Title:</strong>
+          {movie.title}
+        </p>
+      </div>
     </div>
   );
 }
