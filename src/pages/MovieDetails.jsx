@@ -28,6 +28,11 @@ export function MovieDetails() {
           <strong>Genres:</strong>
           {genres.name}
         </p>
+
+        <p>
+          <strong>Description:</strong>
+          {movie.overview}
+        </p>
       </div>
     </div>
   );
