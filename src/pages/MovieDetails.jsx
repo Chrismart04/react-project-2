@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { get } from "../data/httpClient";
 import { getMovieImg } from "../utils/getMovieImage";
+import "./MovieDetails.css";
 
 export function MovieDetails() {
   const { movieId } = useParams();
@@ -17,10 +18,10 @@ export function MovieDetails() {
   const imageUrl = getMovieImg(movie.poster_path, 500);
 
   return (
-    <div>
-      <img src={imageUrl} alt={movie.title} />
-      <div>
-        <p>
+    <div className="detailsContainer">
+      <img className="col movieImage" src={imageUrl} alt={movie.title} />
+      <div className="movieDetails">
+        <p className="title">
           <strong>Title:</strong>
           {movie.title}
         </p>
