@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+    <title>movies</title>
       <header>
         <h1 className="title">🎬Movies</h1>
       </header>
